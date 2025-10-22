@@ -1,0 +1,34 @@
+import { Callout, FileTree } from 'nextra/components';
+
+# Versioning
+
+This document outlines the versioning strategy adhering to [Semantic Versioning 2.0.0](https://semver.org/) guidelines.
+
+We use the format `<major>.<minor>.<patch>` to clearly communicate the impact of changes on backward compatibility. SemVer ensures that version numbers reflect the nature of changes in the site, making it easier to integrate and upgrade the project.
+
+### Version Format
+
+Releases are numbered as `<major>.<minor>.<patch>`, where:
+
+- **Major (X)**: Incremented for incompatible API changes.
+- **Minor (Y)**: Incremented for backward-compatible additions or deprecations.
+- **Patch (Z)**: Incremented for backward-compatible bug fixes.
+
+### Bumping Guidelines
+
+Use the table below to determine how to increment versions based on changes:
+
+| Change Type                  | Description                                                                                                            | Version Bump | Reset Other Components? |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------ | ----------------------- |
+| **Breaking Changes**         | Incompatible modifications to the public API (e.g., removing a method or changing a parameter type).                   | Major (X+1)  | Yes (Y=0, Z=0)          |
+| **Additions & Deprecations** | New features or methods added without breaking existing code; marking old features as deprecated (with documentation). | Minor (Y+1)  | Yes (Z=0)               |
+| **Bug Fixes**                | Fixes for incorrect behavior that don't alter the API (e.g., internal logic corrections).                              | Patch (Z+1)  | No                      |
+| **Miscellaneous**            | Documentation updates, internal refactoring, or other non-API changes.                                                 | Patch (Z+1)  | No                      |
+
+<Callout type="warning">
+- Once a version is released, it **must not be modified**. Errors require a new release.
+- Deprecations must be announced in documentation and removed only in a major version after at least one minor release.
+- For dependency ranges, consumers can specify `>=1.0.0 <2.0.0` to get all compatible updates (patches and minors) without risking breaks.
+</Callout>
+
+For a deeper dive into these rules, including precedence comparisons and dependency resolution, visit the [official SemVer specification](https://semver.org/).

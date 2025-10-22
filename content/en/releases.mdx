@@ -1,0 +1,12 @@
+## Release Notes
+
+Below an overview of the latest changes and improvements made to ECTickets.
+
+import { releaseNotesToc } from '@/components/ReleaseNotes/release-notes-toc';
+import { ReleaseNotes } from '@/components/ReleaseNotes/ReleaseNotes';
+
+<ReleaseNotes />
+
+export const metadata = {
+  toc: await releaseNotesToc(),
+};
