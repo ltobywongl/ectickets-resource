@@ -1,9 +1,9 @@
 # ECTickets Resources Center
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Next.js](https://img.shields.io/badge/Next.js-14.x-black?logo=next.js)](https://nextjs.org/)
-[![Nextra](https://img.shields.io/badge/Nextra-2.x-blue?logo=markdown)](https://nextra.site/)
-[![Mantine](https://img.shields.io/badge/Mantine-7.x-purple?logo=react)](https://mantine.dev/)
+[![Next.js](https://img.shields.io/badge/Next.js-15.x-black?logo=next.js)](https://nextjs.org/)
+[![Nextra](https://img.shields.io/badge/Nextra-4.x-blue?logo=markdown)](https://nextra.site/)
+[![Mantine](https://img.shields.io/badge/Mantine-8.x-purple?logo=react)](https://mantine.dev/)
 
 The official documentation site for ECTickets, providing comprehensive guides for attendees and organizers. Built with Nextra (Next.js-based docs framework) and Mantine UI for a modern, responsive experience. This repo hosts the source for [resource.ectickets.com](https://resource.ectickets.com).
 
@@ -20,7 +20,7 @@ As a newly launched platform, we're open to contributions — help us improve!
 
 ## Prerequisites
 
-- Node.js ≥18.x
+- Node.js ≥20.x
 - Yarn
 
 ## Installation
@@ -28,8 +28,8 @@ As a newly launched platform, we're open to contributions — help us improve!
 1. Clone the repository:
 
    ```
-   git clone https://github.com/ltobywongl/ectickets-docs.git
-   cd ectickets-docs
+   git clone https://github.com/ltobywongl/ectickets-resource.git
+   cd ectickets-resource
    ```
 
 2. Install dependencies:

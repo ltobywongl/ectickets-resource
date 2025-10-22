@@ -47,6 +47,7 @@ export default async function RootLayout({
             pageMap={pageMap}
             footer={<MantineFooter />}
             sidebar={nextraLayout.sidebar}
+            docsRepositoryBase={config.nextraLayout.docsRepositoryBase}
           >
             {children}
           </Layout>

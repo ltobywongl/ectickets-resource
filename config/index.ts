@@ -34,6 +34,8 @@ export default {
    * Nextra Layout component configuration
    */
   nextraLayout: {
+    docsRepositoryBase:
+      'https://github.com/ltobywongl/ectickets-resource/blob/main',
     sidebar: {
       defaultMenuCollapseLevel: 1,
     },
@@ -47,6 +49,7 @@ export default {
       nonce: '8IBTHwOdqNKAWeKl7plt8g==',
     },
   },
+
   /**
    * Release notes configuration
    * This is used to link the release notes in the app.
