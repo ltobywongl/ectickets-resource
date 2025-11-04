@@ -23,28 +23,4 @@ export default {
       timestamp: false,
     },
   },
-  'event-management': {
-    title: 'Event Management',
-    theme: {
-      timestamp: false,
-    },
-  },
-  checkin: {
-    title: 'Check-In',
-    theme: {
-      timestamp: false,
-    },
-  },
-  payout: {
-    title: 'Payout',
-    theme: {
-      timestamp: false,
-    },
-  },
-  reporting: {
-    title: 'Reporting',
-    theme: {
-      timestamp: false,
-    },
-  },
 };

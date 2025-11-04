@@ -1,0 +1,83 @@
+import { Callout, Steps } from 'nextra/components';
+
+# Event Check-In Guide
+
+On event day, ECTickets' web-based scanner makes check-in fast, secure, and contactless. No downloads or hardware required—just your laptop or tablet. The system validates QR codes with built-in integrity checks (hashed per-event secrets) to prevent fraud, and displays key ticket details for quick verification.
+
+This guide covers accessing and using the scanner. Expect 1-2 minutes to set up per session.
+
+## Accessing the Scanner
+
+Each event session has a unique, auto-generated password for security. Generate and share it only with trusted check-in staff.
+
+<Steps>
+### Navigate to Attendance Management
+- Log in to your [Event Management Dashboard](https://www.ectickets.com/dashboard).
+- Select your event, then go to **Attendance Management** in the side menu (under "Sales Management").
+
+### Copy Password
+
+- Scroll to the **Session Password** section.
+- For your session (e.g., "2025-11-04 20:00"), click **"Copy Password"**.
+- **Copy** the password (clickable button) and share to the receptionist.
+
+### Enter the Scanner Page
+
+- Click the prominent **`https://www.ectickets.com/e-checkin`** link (or copy with the button).
+- Paste your session password in the prompt and submit.
+- You're in! The scanner camera activates (Please **grant permissions** if prompted).
+
+</Steps>
+
+![Attendance Management Screenshot](/assets/docs/organizer/event-day/checkin/attendance-management-password.png)<br></br>
+_Screenshot: Password copy button and check-in link highlighted._
+
+<Callout type="info" title="Multi-Session Support">
+  ECTickets Scanner support multiple scanner sessions opened at the
+  same time in online mode.
+</Callout>
+
+## Scanning Process
+
+The scanner uses your device's camera to read QR codes in real-time. Each scan validates instantly.
+
+<Steps>
+### Position & Scan
+- Point camera at the attendee's QR code (on phone, printout, or wallet).
+- Hold steady 6-12 inches away — pop-up dialog confirms capture.
+
+### Review Ticket Details
+
+- A pop-up dialog appears with:
+  - **Validation Status** (In Progress/Valid/Used/Failed).
+  - **Ticket Type** (e.g., Normal, VIP).
+  - **Seat/Section**
+  - **Discount Used** (e.g., "Students' Fare").
+- Click **"Check In"** to mark as attended (updates dashboard live).
+
+### Handle Edge Cases
+
+- **Attendee List**: You can always get the details of attendees (Including name, email, seats for verification) in **Ticket Details Report**. Manual override is possible for extreme case.
+- **Invalid QR**: Dialog shows error multiple times — issue manual override if needed.
+- **Duplicate Scan**: Alerts and blocks re-entry.
+
+</Steps>
+
+![Scanner Dialog Example](/assets/docs/organizer/event-day/checkin/scanner-dialog-popup.png)<br></br>
+_Screenshot: Sample check-in dialog with ticket details._
+
+<Callout type="warning" title="Security Note">
+  QR hashes include per-event secrets — tampering is detected
+  automatically.
+</Callout>
+
+## Best Practices
+
+- **Browser Recommendation**: Use Chrome for optimal performance (camera stability, fast decoding).
+- **Setup Tips**: Test lighting (avoid glare); use stands for hands-free.
+- **Team Coordination**: Share passwords securely; monitor total check-ins via dashboard reports for real-time capacity.
+- **Post-Event**: Scanner auto-locks after payout state.
+
+Ready for event day? Review [Payout & Reporting](/docs/organizer/post-event) next.
+
+Questions? [Contact Us](https://www.ectickets.com/contact).
