@@ -1,8 +1,9 @@
 import '@gfazioli/mantine-marquee/styles.layer.css';
 import '@gfazioli/mantine-text-animate/styles.layer.css';
-import '@mantine/core/styles.layer.css';
 import '@mantine/core/styles.css';
+import '@mantine/core/styles.layer.css';
 
+import { Analytics } from '@vercel/analytics/next';
 import { Layout } from 'nextra-theme-docs';
 import { Head } from 'nextra/components';
 import { getPageMap } from 'nextra/page-map';
@@ -52,6 +53,7 @@ export default async function RootLayout({
             {children}
           </Layout>
         </MantineProvider>
+        <Analytics />
       </body>
     </html>
   );
