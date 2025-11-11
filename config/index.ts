@@ -34,8 +34,7 @@ export default {
    * Nextra Layout component configuration
    */
   nextraLayout: {
-    docsRepositoryBase:
-      'https://github.com/ltobywongl/ectickets-resource/blob/main',
+    docsRepositoryBase: 'https://github.com/ltobywongl/ectickets-resource/blob/main',
     sidebar: {
       defaultMenuCollapseLevel: 1,
     },
@@ -71,4 +70,8 @@ export default {
     defaultExcerptLength: 30,
     defaultLanguage: 'en',
   },
+  /**
+   * Supported languages configuration
+   */
+  languages: [{ code: 'en', name: 'English' }],
 } as const;
