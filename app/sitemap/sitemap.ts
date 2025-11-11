@@ -2,9 +2,7 @@ import { MetadataRoute } from 'next';
 import { URL } from 'node:url';
 import { Folder, MdxFile, Meta, MetaJsonFile, PageMapItem } from 'nextra';
 import { getPageMap } from 'nextra/page-map';
-import config from '@/config';
-
-export const dynamic = 'force-static';
+import siteConfig from '@/config';
 
 interface PageType {
   title: string;
@@ -86,9 +84,9 @@ const parsePageMapItems = (items: PageMapItem[]): SitemapEntry[] => {
   return siteMapEntries.filter((entry): entry is SitemapEntry => !!entry);
 };
 
-const sitemap = async (): Promise<MetadataRoute.Sitemap> => {
-  const baseUrl = config.metadata.metadataBase;
-  const languages = config.languages;
+const sitemapPromise = async (): Promise<MetadataRoute.Sitemap> => {
+  const baseUrl = siteConfig.metadata.metadataBase;
+  const languages = siteConfig.languages;
   const siteMapEntries: SitemapEntry[] = [];
 
   for (const language of languages) {
@@ -105,4 +103,4 @@ const sitemap = async (): Promise<MetadataRoute.Sitemap> => {
   return siteMapEntries;
 };
 
-export default sitemap;
+export default sitemapPromise;
