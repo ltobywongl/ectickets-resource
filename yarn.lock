@@ -9219,7 +9219,7 @@ __metadata:
     eslint-plugin-react: "npm:^7.37.5"
     jest: "npm:^29.7.0"
     jest-environment-jsdom: "npm:^29.7.0"
-    next: "npm:15.5.9"
+    next: "npm:^15.5.9"
     nextra: "npm:^4.6.0"
     nextra-theme-docs: "npm:^4.6.0"
     pagefind: "npm:^1.4.0"
@@ -14780,7 +14780,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:15.5.9":
+"next@npm:^15.5.9":
   version: 15.5.9
   resolution: "next@npm:15.5.9"
   dependencies:
