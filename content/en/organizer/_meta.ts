@@ -11,6 +11,12 @@ export default {
       timestamp: false,
     },
   },
+  'invite-member': {
+    title: 'Invite Team Members',
+    theme: {
+      timestamp: false,
+    },
+  },
   'event-management': {
     title: 'Event Management',
     theme: {
